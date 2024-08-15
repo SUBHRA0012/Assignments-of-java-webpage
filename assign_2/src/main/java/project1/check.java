@@ -12,9 +12,8 @@ public class check extends HttpServlet{
 	{
 		String i=req.getParameter("id1");
 		int j=Integer.parseInt(req.getParameter("pass"));
-		int word=1234;
 		
-		if (word==j) {
+		if (j==1234 && i.equals("subh")) {
 			PrintWriter out=res.getWriter();
 			out.println("Hello admin");
 		}
